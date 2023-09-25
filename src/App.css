@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
+.App{
+  background: linear-gradient(45deg, rgb(91, 66, 137), rgb(40, 66, 123), rgb(33, 62, 105), rgb(85, 46, 120));
+  background-size: 100% 100%;
+  animation: gradientAnimation 15s ease infinite;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 20px;
   color: white;
 }
-
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.Sidebar {
+  width: 40%;
+  position: fixed; 
+  height: 100%;
+  margin-top: 100px;
+  margin-left: 100px
+}
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.jump-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  border-bottom: 1px solid white; /* White bottom border */
+  color: white; /* Text color */
+  text-align: right; /* Text aligned to the right */
+  padding: 20px 0 0 40px; /* Adjust padding as needed */
+  cursor: pointer;
+  outline: none; /* Remove the default outline */
+  transition: border-bottom 0.3s ease; /* Add a transition effect to the bottom border */
+  transition: padding 0.3s ease;
+  &:hover, &:active {
+    border-bottom: 1px solid lightgray; /* Change the border color on hover */
+    padding: 20px 0 0 80px;
   }
-  to {
-    transform: rotate(360deg);
+}
+.jump-button.active-button {
+  border-bottom: 1px solid lightgray;
+  padding: 20px 0 0 80px;
+}
+
+.sub-button {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  color: white; /* Text color */
+  text-align: right; /* Text aligned to the right */
+  padding: 5px 0 0 80px; /* Adjust padding as needed */
+  cursor: pointer;
+  outline: none; /* Remove the default outline */
+  transition: border-bottom 0.3s ease; /* Add a transition effect to the bottom border */
+  transition: padding 0.3s ease;
+  &:hover, &:active {
+    border-bottom: 1px solid lightgray; /* Change the border color on hover */
+    padding: 5px 0 0 90px;
   }
+}
+.sub-button.active-button {
+  border-bottom: 1px solid lightgray; /* Change the border color on hover */
+  padding: 5px 0 0 90px;
+}
+
+#Blurb{
+  padding-top: 100px;
+  min-height: 50vh
+}
+#Projects, #More, #Extra{
+  min-height: 80vh;
+  padding-top: 100px;
+}
+
+#Projects td {
+  width: 40%;
+  font-size: medium;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+table{
+  border-collapse: collapse;
+}
+
+td:first-child {
+  background-color: white;
+  border-radius: 0 0 0 0;
+}
+.box {
+  background-color: white;
+  border-radius: 10px;
+}
+
+tr:first-child td {
+  border-radius: 10px 10px 0 0;
+}
+
+tr:last-child td {
+  border-radius: 0 0 10px 10px;
 }
