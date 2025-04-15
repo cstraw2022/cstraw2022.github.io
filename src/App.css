@@ -99,10 +99,15 @@
   min-height: 80vh
 }
 
-#Personal td, #Research td {
+#Research td {
   font-size: medium;
   padding-left: 20px;
   padding-right: 20px;
+  width: 40%
+}
+#Personal td{
+  font-size: medium;
+  padding-left: 20px;
   width: 40%
 }
 
@@ -111,13 +116,10 @@ table {
 }
 
 td:first-child {
-  border-radius: 0 0 0 0
-}
-
-.box,
-td:first-child {
+  border-radius: 0 0 0 0;
   background-color: #fff
 }
+
 
 .box {
   background-size: 100%;
@@ -196,4 +198,21 @@ tr:last-child td {
   height: auto;
   cursor: pointer;
   fill: grey;
+}
+.sidebar-git {
+  position: fixed;
+  bottom: 95px;
+  left: 150px;
+
+}
+.Vid{
+  padding:20px 20px 0px 0px;
+}
+
+p{
+  line-height: 38px;
+}
+
+a{
+  color: #61dafb;
 }

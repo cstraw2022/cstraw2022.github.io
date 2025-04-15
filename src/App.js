@@ -1,11 +1,11 @@
 
 import React from 'react';
 import './App.css';
-import { About } from './About';
-import { Personal } from './Personal';
-import { Activities } from './Activities';
-import { Research } from './Research';
-import { Sidebar } from './Sidebar';
+import { About } from './components/About';
+import { Personal } from './components/Personal';
+import { Activities } from './components/Activities';
+import { Research } from './components/Research';
+import { Sidebar } from './components/Sidebar';
 
 function App() {
   return (

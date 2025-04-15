@@ -1,0 +1,16 @@
+import React from "react"
+import face from "../assets/face.png"
+export function About(){
+    return (
+        <div id="About">
+            <img
+                src={face}
+                alt="nsu"
+                height="200px"
+            />
+            <h1>About Me</h1> 
+
+            <p>Hi! My name’s Chris. I’m an incoming Graduate student at USC Viterbi, and a recent graduate from UCSB. When I'm not glued to the computer screen, in my free time I enjoy playing Nintendo games, tennis, violin, and going to support Nikkei Student Union meetings. Feel free to take a look at my research and experience below!</p>     
+        </div>
+    )
+}
