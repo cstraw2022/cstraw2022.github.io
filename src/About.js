@@ -1,7 +1,7 @@
 import React from "react"
-export function Blurb(){
+export function About(){
     return (
-        <div id="Blurb">
+        <div id="About">
             <h1>About Me</h1> 
             <p>Hi! My name is Chris</p>     
         </div>

@@ -1,15 +1,11 @@
 
 import React from 'react';
 import './App.css';
-import { Blurb } from './Blurb';
-import { Extra } from './Extra';
-import { More } from './More';
-import { Projects } from './Projects';
+import { About } from './About';
+import { Personal } from './Personal';
+import { Activities } from './Activities';
+import { Research } from './Research';
 import { Sidebar } from './Sidebar';
-import * as Scroll from 'react-scroll';
-import Background from './Background';
-
-const Link = Scroll.Link;
 
 function App() {
   return (
@@ -18,10 +14,10 @@ function App() {
         <Sidebar />
         <body>
           <div style={{ marginLeft: '50%', zIndex:'4',paddingRight:'10px'}}>
-            <Blurb />
-            <Projects />
-            <Extra />
-            <More />
+            <About />
+            <Research />
+            <Personal />
+            <Activities />
           </div>
         </body>
       </header>
