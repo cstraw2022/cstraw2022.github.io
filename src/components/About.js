@@ -10,7 +10,7 @@ export function About(){
             />
             <h1>About Me</h1> 
 
-            <p>Hi! My name’s Chris. I’m an incoming Graduate student at USC Viterbi, and a recent graduate from UCSB. When I'm not glued to the computer screen, in my free time I enjoy playing Nintendo games, tennis, violin, and going to support Nikkei Student Union meetings. Feel free to take a look at my research and experience below!</p>     
+            <p>Hi! My name’s Chris, a recent graduate from UCSB with a passion in tinkering. When I'm not glued to the computer screen, in my free time I enjoy playing Nintendo games, tennis, violin, and going to support Nikkei Student Union meetings. Feel free to take a look at my research and experience below!</p>     
         </div>
     )
 }
